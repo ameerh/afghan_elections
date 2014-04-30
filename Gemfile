@@ -10,7 +10,7 @@ gem 'pry-rails', :group => :development
 
 gem 'nokogiri'
 gem 'rest-open-uri', '~> 1.0.0'
-
+gem 'therubyracer'
 gem 'protected_attributes'
 
 # Use SCSS for stylesheets
