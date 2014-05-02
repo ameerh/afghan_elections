@@ -16,7 +16,7 @@ task :get_districts_and_pc => :environment do
 		result = District.create(districts)
 	end
 
-	# #Get Polling Centers 
+	#Get Polling Centers 
 	uri = URI("http://www.iec.org.af/results/en/elections/getPC")
 	districts = District.find(:all)
 	districts.each do |district|
@@ -28,7 +28,7 @@ task :get_districts_and_pc => :environment do
 		result = PollingCenter.create(polling_centers)
 	end
 
-	Get Polling Stations Method 1
+	#Get Polling Stations Method 1
 	uri = URI("http://www.iec.org.af/results/en/elections/presidentialpcajax_scanfile")
 	polling_centers = PollingCenter.find(:all)
 	polling_stations = Array.new
