@@ -3,7 +3,7 @@ require 'net/http'
 require 'nokogiri'
 require 'timeout'
 
-task :get_districts_and_pc => :environment do
+task :get_photos => :environment do
 	# Get Photos
 	image_pre_uri = "http://results.iec.org.af/pdf/PreliminaryResultImages/"
 	polling_centers = PollingCenter.find(:all)
