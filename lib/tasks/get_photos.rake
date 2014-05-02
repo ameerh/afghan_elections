@@ -30,10 +30,8 @@ task :get_photos => :environment do
 					puts img_url
 					file << open(img_url).read
 				end
-				binding.pry
 			else
 				flag = true
-				binding.pry
 			end
 			i += 1
 		end
